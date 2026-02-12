@@ -104,7 +104,7 @@ const App: React.FC = () => {
     noBtnText: 'Нет 🥲',
     successTitle: 'Она сказала Да! 😍',
     successSubtitle: 'Вы покорили меня с первой встречи - и навсегда останетесь моим счастьем',
-    successFooter: 'Приглашаю вас на ужин. Время: В 17:30 заеду за вами. Место встречи: Ресторан Sorrento. Дресс-код: Вы в любом виде неотразимы для меня. С вас требуется: Прекрасное настроение',
+    successFooter: 'Приглашаю вас на ужин.\nВремя: В 17:30 заеду за вами.\nМесто встречи: Ресторан Sorrento.\nДресс-код: Вы в любом виде неотразимы для меня.\nС вас требуется: Прекрасное настроение',
     mainFooter: 'Для моей единственной и навсегда любимой'
   });
 
@@ -464,10 +464,11 @@ const App: React.FC = () => {
                   isDark
                 />
                 <div className="max-w-2xl mx-auto pt-8">
-                  <EditableText 
-                    value={content.successFooter} 
-                    onUpdate={() => {}}
-                    className="text-rose-500 font-bold text-xl md:text-3xl block tracking-tight uppercase"
+                  <EditableText
+                    value={content.successFooter}
+                    onUpdate={() => { }}
+                    /* Добавлен класс whitespace-pre-line ниже */
+                    className="text-rose-500 font-bold text-xl md:text-3xl block tracking-tight uppercase whitespace-pre-line"
                     component="p"
                     isDark
                   />
